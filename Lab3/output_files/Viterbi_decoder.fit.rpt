@@ -1,5 +1,5 @@
 Fitter report for Viterbi_decoder
-Thu Apr 12 20:40:22 2018
+Thu Apr 12 20:51:21 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Apr 12 20:40:22 2018            ;
+; Fitter Status                      ; Successful - Thu Apr 12 20:51:21 2018            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Viterbi_decoder                                  ;
 ; Top-level Entity Name              ; TrellisTopLevel                                  ;
@@ -137,12 +137,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 2.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ; < 0.1%      ;
+;     Processors 2-4         ;  33.3%      ;
 ;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -1276,7 +1276,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 8 output pins without output pin load capacitance assignment
     Info (306007): Pin "m_hat[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1290,12 +1290,12 @@ Warning (306006): Found 8 output pins without output pin load capacitance assign
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 1234 megabytes
-    Info: Processing ended: Thu Apr 12 20:40:22 2018
+    Info: Peak virtual memory: 1261 megabytes
+    Info: Processing ended: Thu Apr 12 20:51:21 2018
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 

@@ -8,18 +8,40 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_lite/16.1
+vaddCompareStore
+!s110 1523585278
+!i10b 1
+!s100 bjBd9dBNM;VYfg:Cz]M=c3
+I;ESc37h:kR@`56LV=ARS>1
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Viterbi_Implementation
+w1523585271
+8C:/Viterbi_Implementation/Lab3/addCompareStore.v
+FC:/Viterbi_Implementation/Lab3/addCompareStore.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1523585278.000000
+!s107 C:/Viterbi_Implementation/Lab3/addCompareStore.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Viterbi_Implementation/Lab3/addCompareStore.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+nadd@compare@store
 vbitEncoder
 !s110 1523558461
 !i10b 1
 !s100 ZfgDogc<>DFIE=1=?TzZC1
 IQA=Jef52MF5?<A9YINXkK2
-Z0 VDg1SIo80bB@j0V0VzS_@n1
-Z1 dC:/Viterbi_Implementation
+R0
+R1
 w1523558457
 8C:/Viterbi_Implementation/Lab3/bitEncoder.v
 FC:/Viterbi_Implementation/Lab3/bitEncoder.v
 L0 1
-Z2 OV;L;10.5b;63
+R2
 r1
 !s85 0
 31
@@ -27,8 +49,8 @@ r1
 !s107 C:/Viterbi_Implementation/Lab3/bitEncoder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Viterbi_Implementation/Lab3/bitEncoder.v|
 !i113 1
-Z3 o-work work
-Z4 tCvgOpt 0
+R3
+R4
 nbit@encoder
 vbitEncoder_V
 !s110 1523557820
@@ -53,23 +75,23 @@ R3
 R4
 nbit@encoder_@v
 vstage1
-!s110 1523564681
+!s110 1523583276
 !i10b 1
-!s100 :ZA`FeQQ:Y@P;LIHRI`kE0
-I[jm>_S<?K0[h3?NJolXiQ0
+!s100 ZP^67WXM50d;WA>EcKgM<0
+Ibnb;eVTC7_j7oJQnFekR70
 R0
 R1
-w1523564665
-8C:/Viterbi_Implementation/Lab3/stage1.v
-FC:/Viterbi_Implementation/Lab3/stage1.v
-L0 1
+w1523583255
+8C:\Viterbi_Implementation\Lab3\stage1.v
+FC:\Viterbi_Implementation\Lab3\stage1.v
+L0 2
 R2
 r1
 !s85 0
 31
-!s108 1523564681.000000
-!s107 C:/Viterbi_Implementation/Lab3/stage1.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Viterbi_Implementation/Lab3/stage1.v|
+!s108 1523583276.000000
+!s107 C:\Viterbi_Implementation\Lab3\stage1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Viterbi_Implementation\Lab3\stage1.v|
 !i113 1
 R3
 R4
@@ -91,6 +113,27 @@ r1
 !s108 1523577268.000000
 !s107 C:/Viterbi_Implementation/stage1_2.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Viterbi_Implementation/stage1_2.v|
+!i113 1
+R3
+R4
+vstage2
+!s110 1523584239
+!i10b 1
+!s100 j59BC8?<iFIF;OVAlUmRV2
+I[eJlofmgEaN:87N0?<BoX1
+R0
+R1
+w1523584218
+8C:\Viterbi_Implementation\Lab3\stage2.v
+FC:\Viterbi_Implementation\Lab3\stage2.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1523584239.000000
+!s107 C:\Viterbi_Implementation\Lab3\stage2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Viterbi_Implementation\Lab3\stage2.v|
 !i113 1
 R3
 R4
