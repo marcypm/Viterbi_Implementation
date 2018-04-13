@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Viterbi_decoder
-Fri Apr 06 17:08:56 2018
+Thu Apr 12 20:40:30 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -132,8 +132,10 @@ No paths to report.
 +------------+-------------+--------+--------+--------+--------+
 ; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
 +------------+-------------+--------+--------+--------+--------+
-; msg[0]     ; m_hat[7]    ; 10.664 ; 10.664 ; 10.664 ; 10.664 ;
-; msg[1]     ; m_hat[7]    ; 10.940 ; 10.940 ; 10.940 ; 10.940 ;
+; msg[0]     ; m_hat[6]    ; 10.852 ; 10.852 ; 10.852 ; 10.852 ;
+; msg[0]     ; m_hat[7]    ; 11.117 ;        ;        ; 11.117 ;
+; msg[1]     ; m_hat[6]    ; 10.988 ; 10.988 ; 10.988 ; 10.988 ;
+; msg[1]     ; m_hat[7]    ;        ; 11.255 ; 11.255 ;        ;
 +------------+-------------+--------+--------+--------+--------+
 
 
@@ -142,8 +144,10 @@ No paths to report.
 +------------+-------------+--------+--------+--------+--------+
 ; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
 +------------+-------------+--------+--------+--------+--------+
-; msg[0]     ; m_hat[7]    ; 10.664 ; 10.664 ; 10.664 ; 10.664 ;
-; msg[1]     ; m_hat[7]    ; 10.940 ; 10.940 ; 10.940 ; 10.940 ;
+; msg[0]     ; m_hat[6]    ; 10.852 ; 10.852 ; 10.852 ; 10.852 ;
+; msg[0]     ; m_hat[7]    ; 11.117 ;        ;        ; 11.117 ;
+; msg[1]     ; m_hat[6]    ; 10.988 ; 10.988 ; 10.988 ; 10.988 ;
+; msg[1]     ; m_hat[7]    ;        ; 11.255 ; 11.255 ;        ;
 +------------+-------------+--------+--------+--------+--------+
 
 
@@ -182,8 +186,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; msg[0]     ; m_hat[7]    ; 5.929 ; 5.929 ; 5.929 ; 5.929 ;
-; msg[1]     ; m_hat[7]    ; 6.047 ; 6.047 ; 6.047 ; 6.047 ;
+; msg[0]     ; m_hat[6]    ; 6.041 ; 6.041 ; 6.041 ; 6.041 ;
+; msg[0]     ; m_hat[7]    ; 6.164 ;       ;       ; 6.164 ;
+; msg[1]     ; m_hat[6]    ; 6.096 ; 6.096 ; 6.096 ; 6.096 ;
+; msg[1]     ; m_hat[7]    ;       ; 6.220 ; 6.220 ;       ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -192,8 +198,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; msg[0]     ; m_hat[7]    ; 5.929 ; 5.929 ; 5.929 ; 5.929 ;
-; msg[1]     ; m_hat[7]    ; 6.047 ; 6.047 ; 6.047 ; 6.047 ;
+; msg[0]     ; m_hat[6]    ; 6.041 ; 6.041 ; 6.041 ; 6.041 ;
+; msg[0]     ; m_hat[7]    ; 6.164 ;       ;       ; 6.164 ;
+; msg[1]     ; m_hat[6]    ; 6.096 ; 6.096 ; 6.096 ; 6.096 ;
+; msg[1]     ; m_hat[7]    ;       ; 6.220 ; 6.220 ;       ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -212,8 +220,10 @@ No paths to report.
 +------------+-------------+--------+--------+--------+--------+
 ; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
 +------------+-------------+--------+--------+--------+--------+
-; msg[0]     ; m_hat[7]    ; 10.664 ; 10.664 ; 10.664 ; 10.664 ;
-; msg[1]     ; m_hat[7]    ; 10.940 ; 10.940 ; 10.940 ; 10.940 ;
+; msg[0]     ; m_hat[6]    ; 10.852 ; 10.852 ; 10.852 ; 10.852 ;
+; msg[0]     ; m_hat[7]    ; 11.117 ;        ;        ; 11.117 ;
+; msg[1]     ; m_hat[6]    ; 10.988 ; 10.988 ; 10.988 ; 10.988 ;
+; msg[1]     ; m_hat[7]    ;        ; 11.255 ; 11.255 ;        ;
 +------------+-------------+--------+--------+--------+--------+
 
 
@@ -222,8 +232,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; msg[0]     ; m_hat[7]    ; 5.929 ; 5.929 ; 5.929 ; 5.929 ;
-; msg[1]     ; m_hat[7]    ; 6.047 ; 6.047 ; 6.047 ; 6.047 ;
+; msg[0]     ; m_hat[6]    ; 6.041 ; 6.041 ; 6.041 ; 6.041 ;
+; msg[0]     ; m_hat[7]    ; 6.164 ;       ;       ; 6.164 ;
+; msg[1]     ; m_hat[6]    ; 6.096 ; 6.096 ; 6.096 ; 6.096 ;
+; msg[1]     ; m_hat[7]    ;       ; 6.220 ; 6.220 ;       ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -253,9 +265,9 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 2     ; 2    ;
-; Unconstrained Output Ports      ; 1     ; 1    ;
-; Unconstrained Output Port Paths ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 4     ; 4    ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 4     ; 4    ;
 +---------------------------------+-------+------+
 
 
@@ -265,7 +277,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Apr 06 17:08:55 2018
+    Info: Processing started: Thu Apr 12 20:40:28 2018
 Info: Command: quartus_sta Viterbi_decoder -c Viterbi_decoder
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -298,9 +310,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 460 megabytes
-    Info: Processing ended: Fri Apr 06 17:08:56 2018
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 463 megabytes
+    Info: Processing ended: Thu Apr 12 20:40:30 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

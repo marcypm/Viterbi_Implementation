@@ -78,7 +78,7 @@ begin
 				d2_out[7] <= TWOR2[7];
 			end
 		end else begin //R2 negative
-			d2_out <= TWOR1 - TWOR2;
+			d2_out[6:0] <= TWOR1[6:0] - TWOR2[6:0];
 			if(TWOR1[6:0] > TWOR2[6:0]) begin
 				d2_out[7] <= TWOR1[7];
 			end else begin 

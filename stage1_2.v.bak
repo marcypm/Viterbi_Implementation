@@ -1,5 +1,5 @@
 
-module stage1 (
+module stage1_2 (
 R1_in	,
 R2_in	,
 d1_out,
@@ -52,9 +52,9 @@ begin
 		end else begin
 			d3_out[6:0] <= (~(TWOR1[6:0] - TWOR2[6:0])+7'b0000001);
 			d3_out[7] <= 1;
-			//if(d3_out[6:0] == 7'b0000000) begin
-				//d3_out <= 8'b00000000;
-			//end
+			if(d3_out[6:0] == 7'b0000000) begin
+				d3_out <= 8'b00000000;
+			end
 		end
 		
 		if(TWOR2[6:0] >= TWOR1[6:0]) begin
@@ -63,9 +63,9 @@ begin
 		end else begin
 			d4_out[6:0] <= (~(TWOR2[6:0] - TWOR1[6:0])+7'b0000001); 
 			d4_out[7] <= 1;
-			//if(d4_out[6:0] == 7'b0000000) begin
-				//d4_out <= 8'b00000000;
-			//end
+			if(d4_out[6:0] == 7'b0000000) begin
+				d4_out <= 8'b00000000;
+			end
 		end
 	end
 
@@ -82,9 +82,9 @@ begin
 		end else begin
 			d1_out[6:0] <= (~(TWOR1[6:0] - TWOR2[6:0])+7'b0000001);
 			d1_out[7] <= 1;
-			//if(d1_out[6:0] == 7'b0000000) begin
-				//d1_out <= 8'b00000000;
-			//end
+			if(d1_out[6:0] == 7'b0000000) begin
+				d1_out <= 8'b00000000;
+			end
 		end
 
 		if(TWOR2[6:0] >= TWOR1[6:0]) begin
@@ -93,9 +93,9 @@ begin
 		end else begin
 			d2_out[6:0] <= (~(TWOR2[6:0] - TWOR1[6:0])+7'b0000001); 
 			d2_out[7] <= 1;
-			//if(d2_out[6:0] == 7'b0000000) begin
-				//d2_out <= 8'b00000000;
-			//end
+			if(d2_out[6:0] == 7'b0000000) begin
+				d2_out <= 8'b00000000;
+			end
 		end
 
 		d3_out[6:0] <= TWOR1[6:0] + TWOR2[6:0];
@@ -121,9 +121,9 @@ begin
 		end else begin
 			d1_out[6:0] <= (~(TWOR2[6:0] - TWOR1[6:0])+7'b0000001); 
 			d1_out[7] <= 1;
-			//if(d1_out[6:0] == 7'b0000000) begin
-				//d1_out <= 8'b00000000;
-			//end
+			if(d1_out[6:0] == 7'b0000000) begin
+				d1_out <= 8'b00000000;
+			end
 		end
 
 		if(TWOR1[6:0] >= TWOR2[6:0]) begin
@@ -132,9 +132,9 @@ begin
 		end else begin
 			d2_out[6:0] <= (~(TWOR1[6:0] - TWOR2[6:0])+7'b0000001);
 			d2_out[7] <= 1;
-			//if(d2_out[6:0] == 7'b0000000) begin
-				//d2_out <= 8'b00000000;
-			//end
+			if(d2_out[6:0] == 7'b0000000) begin
+				d2_out <= 8'b00000000;
+			end
 		end
 
 		d3_out[6:0] <= TWOR1[6:0] + TWOR2[6:0];
@@ -164,9 +164,9 @@ begin
 		end else begin
 			d3_out[6:0] <= (~(TWOR2[6:0] - TWOR1[6:0])+7'b0000001); 
 			d3_out[7] <= 1;
-			//if(d3_out[6:0] == 7'b0000000) begin
-				//d3_out <= 8'b00000000;
-			//end
+			if(d3_out[6:0] == 7'b0000000) begin
+				d3_out <= 8'b00000000;
+			end
 		end
 
 		if(TWOR1[6:0] >= TWOR2[6:0]) begin
@@ -175,9 +175,9 @@ begin
 		end else begin
 			d4_out[6:0] <= (~(TWOR1[6:0] - TWOR2[6:0])+7'b0000001);
 			d4_out[7] <= 1;
-			//if(d4_out[6:0] == 7'b0000000) begin
-				//d4_out <= 8'b00000000;
-			//end
+			if(d4_out[6:0] == 7'b0000000) begin
+				d4_out <= 8'b00000000;
+			end
 		end
 
 	end

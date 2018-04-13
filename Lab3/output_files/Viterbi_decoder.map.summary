@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Apr 06 17:08:46 2018
+Analysis & Synthesis Status : Successful - Thu Apr 12 20:40:14 2018
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : Viterbi_decoder
 Top-level Entity Name : TrellisTopLevel
 Family : Cyclone II
-Total logic elements : 1
-    Total combinational functions : 1
+Total logic elements : 2
+    Total combinational functions : 2
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 16

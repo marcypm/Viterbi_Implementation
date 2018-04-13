@@ -1,5 +1,5 @@
 
-module stage1 (
+module stage1_2 (
 R1_in	,
 R2_in	,
 d1_out,

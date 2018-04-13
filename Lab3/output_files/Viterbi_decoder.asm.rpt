@@ -1,5 +1,5 @@
 Assembler report for Viterbi_decoder
-Fri Apr 06 17:08:54 2018
+Thu Apr 12 20:40:27 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/altera/13.0sp1/Lab3/output_files/Viterbi_decoder.sof
-  6. Assembler Device Options: C:/altera/13.0sp1/Lab3/output_files/Viterbi_decoder.pof
+  5. Assembler Device Options: C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.sof
+  6. Assembler Device Options: C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Apr 06 17:08:54 2018 ;
+; Assembler Status      ; Successful - Thu Apr 12 20:40:27 2018 ;
 ; Revision Name         ; Viterbi_decoder                       ;
 ; Top-level Entity Name ; TrellisTopLevel                       ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------------+
-; Assembler Generated Files                               ;
-+---------------------------------------------------------+
-; File Name                                               ;
-+---------------------------------------------------------+
-; C:/altera/13.0sp1/Lab3/output_files/Viterbi_decoder.sof ;
-; C:/altera/13.0sp1/Lab3/output_files/Viterbi_decoder.pof ;
-+---------------------------------------------------------+
++-----------------------------------------------------------------+
+; Assembler Generated Files                                       ;
++-----------------------------------------------------------------+
+; File Name                                                       ;
++-----------------------------------------------------------------+
+; C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.sof ;
+; C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.pof ;
++-----------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Assembler Device Options: C:/altera/13.0sp1/Lab3/output_files/Viterbi_decoder.sof ;
-+----------------+------------------------------------------------------------------+
-; Option         ; Setting                                                          ;
-+----------------+------------------------------------------------------------------+
-; Device         ; EP2C35F672C6                                                     ;
-; JTAG usercode  ; 0x002F845F                                                       ;
-; Checksum       ; 0x002F845F                                                       ;
-+----------------+------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.sof ;
++----------------+--------------------------------------------------------------------------+
+; Option         ; Setting                                                                  ;
++----------------+--------------------------------------------------------------------------+
+; Device         ; EP2C35F672C6                                                             ;
+; JTAG usercode  ; 0x002F88FF                                                               ;
+; Checksum       ; 0x002F88FF                                                               ;
++----------------+--------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Assembler Device Options: C:/altera/13.0sp1/Lab3/output_files/Viterbi_decoder.pof ;
-+--------------------+--------------------------------------------------------------+
-; Option             ; Setting                                                      ;
-+--------------------+--------------------------------------------------------------+
-; Device             ; EPCS16                                                       ;
-; JTAG usercode      ; 0x00000000                                                   ;
-; Checksum           ; 0x1C78DB18                                                   ;
-; Compression Ratio  ; 3                                                            ;
-+--------------------+--------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.pof ;
++--------------------+----------------------------------------------------------------------+
+; Option             ; Setting                                                              ;
++--------------------+----------------------------------------------------------------------+
+; Device             ; EPCS16                                                               ;
+; JTAG usercode      ; 0x00000000                                                           ;
+; Checksum           ; 0x1C7871B0                                                           ;
+; Compression Ratio  ; 3                                                                    ;
++--------------------+----------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Apr 06 17:08:52 2018
+    Info: Processing started: Thu Apr 12 20:40:24 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Viterbi_decoder -c Viterbi_decoder
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 453 megabytes
-    Info: Processing ended: Fri Apr 06 17:08:54 2018
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 461 megabytes
+    Info: Processing ended: Thu Apr 12 20:40:27 2018
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

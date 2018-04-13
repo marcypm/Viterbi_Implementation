@@ -1,11 +1,11 @@
-module bitEncoder (
+module bitEncoder_V (
 noise		,
 messageBit	,
 r_out			
 );
 
-input wire [31:0] noise;
-input wire messageBit;
+input  [31:0] noise;
+input  messageBit;
 
 output reg [7:0] r_out;
 
@@ -15,7 +15,7 @@ reg [7:0] noiseTemp;
 
 
 
-always (messageBit)
+always @ (messageBit)
 begin
 	case(messageBit)
 		0 : dataStruct = 10010000;

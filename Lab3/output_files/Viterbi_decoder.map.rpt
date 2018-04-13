@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Viterbi_decoder
-Fri Apr 06 17:08:46 2018
+Thu Apr 12 20:40:14 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -50,13 +50,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 06 17:08:46 2018            ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 12 20:40:14 2018            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Viterbi_decoder                                  ;
 ; Top-level Entity Name              ; TrellisTopLevel                                  ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 1                                                ;
-;     Total combinational functions  ; 1                                                ;
+; Total logic elements               ; 2                                                ;
+;     Total combinational functions  ; 2                                                ;
 ;     Dedicated logic registers      ; 0                                                ;
 ; Total registers                    ; 0                                                ;
 ; Total pins                         ; 16                                               ;
@@ -169,49 +169,49 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                  ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------+---------+
-; bitEncoder.v                     ; yes             ; User Verilog HDL File              ; C:/altera/13.0sp1/Lab3/bitEncoder.v           ;         ;
-; uniformRV32.v                    ; yes             ; User Verilog HDL File              ; C:/altera/13.0sp1/Lab3/uniformRV32.v          ;         ;
-; TrellisTopLevel.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/altera/13.0sp1/Lab3/TrellisTopLevel.bdf    ;         ;
-; stage2.v                         ; yes             ; User Verilog HDL File              ; C:/altera/13.0sp1/Lab3/stage2.v               ;         ;
-; stage1.v                         ; yes             ; User Verilog HDL File              ; C:/altera/13.0sp1/Lab3/stage1.v               ;         ;
-; PreTrellisNosieGen.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/altera/13.0sp1/Lab3/PreTrellisNosieGen.bdf ;         ;
-; addCompareStore.v                ; yes             ; User Verilog HDL File              ; C:/altera/13.0sp1/Lab3/addCompareStore.v      ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
+; bitEncoder.v                     ; yes             ; User Verilog HDL File              ; C:/Viterbi_Implementation/Lab3/bitEncoder.v           ;         ;
+; uniformRV32.v                    ; yes             ; User Verilog HDL File              ; C:/Viterbi_Implementation/Lab3/uniformRV32.v          ;         ;
+; TrellisTopLevel.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Viterbi_Implementation/Lab3/TrellisTopLevel.bdf    ;         ;
+; stage2.v                         ; yes             ; User Verilog HDL File              ; C:/Viterbi_Implementation/Lab3/stage2.v               ;         ;
+; stage1.v                         ; yes             ; User Verilog HDL File              ; C:/Viterbi_Implementation/Lab3/stage1.v               ;         ;
+; PreTrellisNosieGen.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Viterbi_Implementation/Lab3/PreTrellisNosieGen.bdf ;         ;
+; addCompareStore.v                ; yes             ; User Verilog HDL File              ; C:/Viterbi_Implementation/Lab3/addCompareStore.v      ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                        ;
-+---------------------------------------------+----------------------+
-; Resource                                    ; Usage                ;
-+---------------------------------------------+----------------------+
-; Estimated Total logic elements              ; 1                    ;
-;                                             ;                      ;
-; Total combinational functions               ; 1                    ;
-; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 0                    ;
-;     -- 3 input functions                    ; 0                    ;
-;     -- <=2 input functions                  ; 1                    ;
-;                                             ;                      ;
-; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 1                    ;
-;     -- arithmetic mode                      ; 0                    ;
-;                                             ;                      ;
-; Total registers                             ; 0                    ;
-;     -- Dedicated logic registers            ; 0                    ;
-;     -- I/O registers                        ; 0                    ;
-;                                             ;                      ;
-; I/O pins                                    ; 16                   ;
-; Embedded Multiplier 9-bit elements          ; 0                    ;
-; Maximum fan-out node                        ; stage1:stage1|Add3~0 ;
-; Maximum fan-out                             ; 1                    ;
-; Total fan-out                               ; 3                    ;
-; Average fan-out                             ; 0.18                 ;
-+---------------------------------------------+----------------------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 2      ;
+;                                             ;        ;
+; Total combinational functions               ; 2      ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 0      ;
+;     -- 3 input functions                    ; 0      ;
+;     -- <=2 input functions                  ; 2      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 2      ;
+;     -- arithmetic mode                      ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+;     -- Dedicated logic registers            ; 0      ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 16     ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+; Maximum fan-out node                        ; msg[0] ;
+; Maximum fan-out                             ; 2      ;
+; Total fan-out                               ; 6      ;
+; Average fan-out                             ; 0.33   ;
++---------------------------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -219,8 +219,8 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
-; |TrellisTopLevel           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |TrellisTopLevel               ; work         ;
-;    |stage1:stage1|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrellisTopLevel|stage1:stage1 ; work         ;
+; |TrellisTopLevel           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |TrellisTopLevel               ; work         ;
+;    |stage1:stage1|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrellisTopLevel|stage1:stage1 ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -335,7 +335,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Apr 06 17:08:44 2018
+    Info: Processing started: Thu Apr 12 20:40:11 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Viterbi_decoder -c Viterbi_decoder
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file bitencoder.v
@@ -356,8 +356,42 @@ Info (12021): Found 1 design units, including 1 entities, in source file addcomp
     Info (12023): Found entity 1: addCompareStore
 Info (12127): Elaborating entity "TrellisTopLevel" for the top level hierarchy
 Info (12128): Elaborating entity "stage1" for hierarchy "stage1:stage1"
-Warning (10230): Verilog HDL assignment warning at stage1.v(36): truncated value with size 32 to match size of target (1)
-Warning (10755): Verilog HDL warning at stage1.v(29): assignments to d1_out[7] create a combinational loop
+Warning (10240): Verilog HDL Always Construct warning at stage1.v(27): inferring latch(es) for variable "d1_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at stage1.v(27): inferring latch(es) for variable "d2_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at stage1.v(27): inferring latch(es) for variable "d3_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at stage1.v(27): inferring latch(es) for variable "d4_out", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "d4_out[0]" at stage1.v(27)
+Info (10041): Inferred latch for "d4_out[1]" at stage1.v(27)
+Info (10041): Inferred latch for "d4_out[2]" at stage1.v(27)
+Info (10041): Inferred latch for "d4_out[3]" at stage1.v(27)
+Info (10041): Inferred latch for "d4_out[4]" at stage1.v(27)
+Info (10041): Inferred latch for "d4_out[5]" at stage1.v(27)
+Info (10041): Inferred latch for "d4_out[6]" at stage1.v(27)
+Info (10041): Inferred latch for "d4_out[7]" at stage1.v(27)
+Info (10041): Inferred latch for "d3_out[0]" at stage1.v(27)
+Info (10041): Inferred latch for "d3_out[1]" at stage1.v(27)
+Info (10041): Inferred latch for "d3_out[2]" at stage1.v(27)
+Info (10041): Inferred latch for "d3_out[3]" at stage1.v(27)
+Info (10041): Inferred latch for "d3_out[4]" at stage1.v(27)
+Info (10041): Inferred latch for "d3_out[5]" at stage1.v(27)
+Info (10041): Inferred latch for "d3_out[6]" at stage1.v(27)
+Info (10041): Inferred latch for "d3_out[7]" at stage1.v(27)
+Info (10041): Inferred latch for "d2_out[0]" at stage1.v(27)
+Info (10041): Inferred latch for "d2_out[1]" at stage1.v(27)
+Info (10041): Inferred latch for "d2_out[2]" at stage1.v(27)
+Info (10041): Inferred latch for "d2_out[3]" at stage1.v(27)
+Info (10041): Inferred latch for "d2_out[4]" at stage1.v(27)
+Info (10041): Inferred latch for "d2_out[5]" at stage1.v(27)
+Info (10041): Inferred latch for "d2_out[6]" at stage1.v(27)
+Info (10041): Inferred latch for "d2_out[7]" at stage1.v(27)
+Info (10041): Inferred latch for "d1_out[0]" at stage1.v(27)
+Info (10041): Inferred latch for "d1_out[1]" at stage1.v(27)
+Info (10041): Inferred latch for "d1_out[2]" at stage1.v(27)
+Info (10041): Inferred latch for "d1_out[3]" at stage1.v(27)
+Info (10041): Inferred latch for "d1_out[4]" at stage1.v(27)
+Info (10041): Inferred latch for "d1_out[5]" at stage1.v(27)
+Info (10041): Inferred latch for "d1_out[6]" at stage1.v(27)
+Info (10041): Inferred latch for "d1_out[7]" at stage1.v(27)
 Info (12128): Elaborating entity "PreTrellisNosieGen" for hierarchy "PreTrellisNosieGen:inst"
 Warning (275013): Port "CLK" of type uniformRV32 and instance "inst7" is missing source signal
 Warning (275013): Port "CLK" of type uniformRV32 and instance "inst6" is missing source signal
@@ -368,8 +402,9 @@ Warning (275013): Port "CLK" of type uniformRV32 and instance "inst2" is missing
 Warning (275013): Port "CLK" of type uniformRV32 and instance "inst1" is missing source signal
 Warning (275013): Port "CLK" of type uniformRV32 and instance "inst" is missing source signal
 Info (12128): Elaborating entity "bitEncoder" for hierarchy "PreTrellisNosieGen:inst|bitEncoder:inst17"
-Warning (10230): Verilog HDL assignment warning at bitEncoder.v(20): truncated value with size 32 to match size of target (8)
 Warning (10230): Verilog HDL assignment warning at bitEncoder.v(21): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at bitEncoder.v(22): truncated value with size 32 to match size of target (8)
+Warning (10235): Verilog HDL Always Construct warning at bitEncoder.v(25): variable "noise" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Info (12128): Elaborating entity "uniformRV32" for hierarchy "PreTrellisNosieGen:inst|uniformRV32:inst7"
 Info (12128): Elaborating entity "uniformRV32" for hierarchy "PreTrellisNosieGen:inst|uniformRV32:inst6"
 Warning (10230): Verilog HDL assignment warning at uniformRV32.v(61): truncated value with size 33 to match size of target (32)
@@ -382,18 +417,88 @@ Info (12128): Elaborating entity "uniformRV32" for hierarchy "PreTrellisNosieGen
 Info (12128): Elaborating entity "addCompareStore" for hierarchy "addCompareStore:inst1"
 Warning (10036): Verilog HDL or VHDL warning at addCompareStore.v(69): object "stage_end" assigned a value but never read
 Info (12128): Elaborating entity "stage2" for hierarchy "stage2:stage2"
-Warning (10230): Verilog HDL assignment warning at stage2.v(43): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at stage2.v(50): truncated value with size 32 to match size of target (1)
-Warning (10755): Verilog HDL warning at stage2.v(36): assignments to d1_out[7] create a combinational loop
+Warning (10240): Verilog HDL Always Construct warning at stage2.v(36): inferring latch(es) for variable "d1_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at stage2.v(36): inferring latch(es) for variable "d4_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at stage2.v(36): inferring latch(es) for variable "d2_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at stage2.v(36): inferring latch(es) for variable "d3_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at stage2.v(36): inferring latch(es) for variable "d6_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at stage2.v(36): inferring latch(es) for variable "d7_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at stage2.v(36): inferring latch(es) for variable "d5_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at stage2.v(36): inferring latch(es) for variable "d8_out", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "d8_out[0]" at stage2.v(36)
+Info (10041): Inferred latch for "d8_out[1]" at stage2.v(36)
+Info (10041): Inferred latch for "d8_out[2]" at stage2.v(36)
+Info (10041): Inferred latch for "d8_out[3]" at stage2.v(36)
+Info (10041): Inferred latch for "d8_out[4]" at stage2.v(36)
+Info (10041): Inferred latch for "d8_out[5]" at stage2.v(36)
+Info (10041): Inferred latch for "d8_out[6]" at stage2.v(36)
+Info (10041): Inferred latch for "d8_out[7]" at stage2.v(36)
+Info (10041): Inferred latch for "d5_out[0]" at stage2.v(36)
+Info (10041): Inferred latch for "d5_out[1]" at stage2.v(36)
+Info (10041): Inferred latch for "d5_out[2]" at stage2.v(36)
+Info (10041): Inferred latch for "d5_out[3]" at stage2.v(36)
+Info (10041): Inferred latch for "d5_out[4]" at stage2.v(36)
+Info (10041): Inferred latch for "d5_out[5]" at stage2.v(36)
+Info (10041): Inferred latch for "d5_out[6]" at stage2.v(36)
+Info (10041): Inferred latch for "d5_out[7]" at stage2.v(36)
+Info (10041): Inferred latch for "d7_out[0]" at stage2.v(36)
+Info (10041): Inferred latch for "d7_out[1]" at stage2.v(36)
+Info (10041): Inferred latch for "d7_out[2]" at stage2.v(36)
+Info (10041): Inferred latch for "d7_out[3]" at stage2.v(36)
+Info (10041): Inferred latch for "d7_out[4]" at stage2.v(36)
+Info (10041): Inferred latch for "d7_out[5]" at stage2.v(36)
+Info (10041): Inferred latch for "d7_out[6]" at stage2.v(36)
+Info (10041): Inferred latch for "d7_out[7]" at stage2.v(36)
+Info (10041): Inferred latch for "d6_out[0]" at stage2.v(36)
+Info (10041): Inferred latch for "d6_out[1]" at stage2.v(36)
+Info (10041): Inferred latch for "d6_out[2]" at stage2.v(36)
+Info (10041): Inferred latch for "d6_out[3]" at stage2.v(36)
+Info (10041): Inferred latch for "d6_out[4]" at stage2.v(36)
+Info (10041): Inferred latch for "d6_out[5]" at stage2.v(36)
+Info (10041): Inferred latch for "d6_out[6]" at stage2.v(36)
+Info (10041): Inferred latch for "d6_out[7]" at stage2.v(36)
+Info (10041): Inferred latch for "d3_out[0]" at stage2.v(36)
+Info (10041): Inferred latch for "d3_out[1]" at stage2.v(36)
+Info (10041): Inferred latch for "d3_out[2]" at stage2.v(36)
+Info (10041): Inferred latch for "d3_out[3]" at stage2.v(36)
+Info (10041): Inferred latch for "d3_out[4]" at stage2.v(36)
+Info (10041): Inferred latch for "d3_out[5]" at stage2.v(36)
+Info (10041): Inferred latch for "d3_out[6]" at stage2.v(36)
+Info (10041): Inferred latch for "d3_out[7]" at stage2.v(36)
+Info (10041): Inferred latch for "d2_out[0]" at stage2.v(36)
+Info (10041): Inferred latch for "d2_out[1]" at stage2.v(36)
+Info (10041): Inferred latch for "d2_out[2]" at stage2.v(36)
+Info (10041): Inferred latch for "d2_out[3]" at stage2.v(36)
+Info (10041): Inferred latch for "d2_out[4]" at stage2.v(36)
+Info (10041): Inferred latch for "d2_out[5]" at stage2.v(36)
+Info (10041): Inferred latch for "d2_out[6]" at stage2.v(36)
+Info (10041): Inferred latch for "d2_out[7]" at stage2.v(36)
+Info (10041): Inferred latch for "d4_out[0]" at stage2.v(36)
+Info (10041): Inferred latch for "d4_out[1]" at stage2.v(36)
+Info (10041): Inferred latch for "d4_out[2]" at stage2.v(36)
+Info (10041): Inferred latch for "d4_out[3]" at stage2.v(36)
+Info (10041): Inferred latch for "d4_out[4]" at stage2.v(36)
+Info (10041): Inferred latch for "d4_out[5]" at stage2.v(36)
+Info (10041): Inferred latch for "d4_out[6]" at stage2.v(36)
+Info (10041): Inferred latch for "d4_out[7]" at stage2.v(36)
+Info (10041): Inferred latch for "d1_out[0]" at stage2.v(36)
+Info (10041): Inferred latch for "d1_out[1]" at stage2.v(36)
+Info (10041): Inferred latch for "d1_out[2]" at stage2.v(36)
+Info (10041): Inferred latch for "d1_out[3]" at stage2.v(36)
+Info (10041): Inferred latch for "d1_out[4]" at stage2.v(36)
+Info (10041): Inferred latch for "d1_out[5]" at stage2.v(36)
+Info (10041): Inferred latch for "d1_out[6]" at stage2.v(36)
+Info (10041): Inferred latch for "d1_out[7]" at stage2.v(36)
+Warning (14026): LATCH primitive "stage1:stage1|d4_out[6]" is permanently enabled
+Warning (14026): LATCH primitive "stage1:stage1|d4_out[7]" is permanently enabled
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "m_hat[6]" is stuck at VCC
     Warning (13410): Pin "m_hat[5]" is stuck at GND
     Warning (13410): Pin "m_hat[4]" is stuck at GND
     Warning (13410): Pin "m_hat[3]" is stuck at GND
     Warning (13410): Pin "m_hat[2]" is stuck at GND
     Warning (13410): Pin "m_hat[1]" is stuck at GND
     Warning (13410): Pin "m_hat[0]" is stuck at GND
-Info (144001): Generated suppressed messages file C:/altera/13.0sp1/Lab3/output_files/Viterbi_decoder.map.smsg
+Info (144001): Generated suppressed messages file C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 6 input pin(s) that do not drive logic
@@ -403,20 +508,20 @@ Warning (21074): Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "msg[4]"
     Warning (15610): No output dependent on input pin "msg[3]"
     Warning (15610): No output dependent on input pin "msg[2]"
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 499 megabytes
-    Info: Processing ended: Fri Apr 06 17:08:46 2018
-    Info: Elapsed time: 00:00:02
+    Info (21061): Implemented 2 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 510 megabytes
+    Info: Processing ended: Thu Apr 12 20:40:14 2018
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/altera/13.0sp1/Lab3/output_files/Viterbi_decoder.map.smsg.
+The suppressed messages can be found in C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.map.smsg.
 
 
