@@ -107,13 +107,108 @@ integer int_S4_W4 = S4_W4[11:0]; */
 always begin
 
 int_S1_W1 = S1_W1[11:0];
+int_S1_W2 = S1_W2[11:0];
+int_S1_W3 = S1_W3[11:0];
+int_S1_W4 = S1_W4[11:0];
+int_S2_W1 = S2_W1[11:0];
+int_S2_W2 = S2_W2[11:0];
+int_S2_W3 = S2_W3[11:0];
+int_S2_W4 = S2_W4[11:0];
+int_S2_W5 = S2_W5[11:0];
+int_S2_W6 = S2_W6[11:0];
+int_S2_W7 = S2_W7[11:0];
+int_S2_W8 = S2_W8[11:0];
+int_S3_W1 = S3_W1[11:0];
+int_S3_W2 = S3_W2[11:0];
+int_S3_W3 = S3_W3[11:0];
+int_S3_W4 = S3_W4[11:0];
+int_S3_W5 = S3_W5[11:0];
+int_S3_W6 = S3_W6[11:0];
+int_S3_W7 = S3_W7[11:0];
+int_S3_W8 = S3_W8[11:0];
+int_S4_W1 = S4_W1[11:0];
+int_S4_W2 = S4_W2[11:0];
+int_S4_W3 = S4_W3[11:0];
+int_S4_W4 = S4_W4[11:0];
 
 if(S1_W1[12] == 1) begin
 	int_S1_W1 = -int_S1_W1;
 end
+if(S1_W2[12] == 1) begin
+	int_S1_W2 = -int_S1_W2;
+end
+if(S1_W3[12] == 1) begin
+	int_S1_W3 = -int_S1_W3;
+end
+if(S1_W4[12] == 1) begin
+	int_S1_W4 = -int_S1_W4;
+end
 
 
+if(S2_W1[12] == 1) begin
+	int_S2_W1 = -int_S2_W1;
+end
+if(S2_W2[12] == 1) begin
+	int_S2_W2 = -int_S2_W2;
+end
+if(S2_W3[12] == 1) begin
+	int_S2_W3 = -int_S2_W3;
+end
+if(S2_W4[12] == 1) begin
+	int_S2_W4 = -int_S2_W4;
+end
+if(S2_W5[12] == 1) begin
+	int_S2_W5 = -int_S2_W5;
+end
+if(S2_W6[12] == 1) begin
+	int_S2_W6 = -int_S2_W6;
+end
+if(S2_W7[12] == 1) begin
+	int_S2_W7 = -int_S2_W7;
+end
+if(S2_W8[12] == 1) begin
+	int_S2_W8 = -int_S2_W8;
+end
+	
 
+if(S3_W1[12] == 1) begin
+	int_S3_W1 = -int_S3_W1;
+end
+if(S3_W2[12] == 1) begin
+	int_S3_W2 = -int_S3_W2;
+end
+if(S3_W3[12] == 1) begin
+	int_S3_W3 = -int_S3_W3;
+end
+if(S3_W4[12] == 1) begin
+	int_S3_W4 = -int_S3_W4;
+end
+if(S3_W5[12] == 1) begin
+	int_S3_W5 = -int_S3_W5;
+end
+if(S3_W6[12] == 1) begin
+	int_S3_W6 = -int_S3_W6;
+end
+if(S3_W7[12] == 1) begin
+	int_S3_W7 = -int_S3_W7;
+end
+if(S3_W8[12] == 1) begin
+	int_S3_W8 = -int_S3_W8;
+end	
+	
+	
+if(S4_W1[12] == 1) begin
+	int_S4_W1 = -int_S4_W1;
+end
+if(S4_W2[12] == 1) begin
+	int_S4_W2 = -int_S4_W2;
+end
+if(S4_W3[12] == 1) begin
+	int_S4_W3 = -int_S4_W3;
+end
+if(S4_W4[12] == 1) begin
+	int_S4_W4 = -int_S4_W4;
+end
 
 //stage 2
 	//node1 Need to do the addition and then compare...
