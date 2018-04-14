@@ -46,23 +46,11 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name VERILOG_FILE bitEncoder.v
-set_global_assignment -name VERILOG_FILE uniformRV32.v
-set_global_assignment -name BDF_FILE TrellisTopLevel.bdf
-set_global_assignment -name VERILOG_FILE stage4.v
-set_global_assignment -name VERILOG_FILE stage2.v
-set_global_assignment -name VERILOG_FILE stage1.v
-set_global_assignment -name BDF_FILE PreTrellisNosieGen.bdf
-set_global_assignment -name VERILOG_FILE addCompareStore.v
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_location_assignment PIN_V2 -to msg[0]
-set_location_assignment PIN_V1 -to msg[1]
-set_location_assignment PIN_U4 -to msg[2]
-set_location_assignment PIN_U3 -to msg[3]
-set_location_assignment PIN_T7 -to msg[4]
-set_location_assignment PIN_P2 -to msg[5]
-set_location_assignment PIN_P1 -to msg[6]
-set_location_assignment PIN_N1 -to msg[7]
+set_location_assignment PIN_U3 -to msg[0]
+set_location_assignment PIN_U4 -to msg[1]
+set_location_assignment PIN_V1 -to msg[2]
+set_location_assignment PIN_V2 -to msg[3]
 set_location_assignment PIN_AD12 -to m_hat[0]
 set_location_assignment PIN_AE12 -to m_hat[1]
 set_location_assignment PIN_AE13 -to m_hat[2]
@@ -74,4 +62,21 @@ set_location_assignment PIN_AA13 -to m_hat[7]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE msg_encoder.v
+set_global_assignment -name VERILOG_FILE bitEncoder.v
+set_global_assignment -name VERILOG_FILE uniformRV32.v
+set_global_assignment -name BDF_FILE TrellisTopLevel.bdf
+set_global_assignment -name VERILOG_FILE stage4.v
+set_global_assignment -name VERILOG_FILE stage2.v
+set_global_assignment -name VERILOG_FILE stage1.v
+set_global_assignment -name BDF_FILE PreTrellisNosieGen.bdf
+set_global_assignment -name VERILOG_FILE addCompareStore.v
+set_location_assignment PIN_AE22 -to msg_e[0]
+set_location_assignment PIN_AF22 -to msg_e[1]
+set_location_assignment PIN_W19 -to msg_e[2]
+set_location_assignment PIN_V18 -to msg_e[3]
+set_location_assignment PIN_U18 -to msg_e[4]
+set_location_assignment PIN_U17 -to msg_e[5]
+set_location_assignment PIN_AA20 -to msg_e[6]
+set_location_assignment PIN_Y18 -to msg_e[7]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

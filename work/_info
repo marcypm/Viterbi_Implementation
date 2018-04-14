@@ -9,23 +9,23 @@ z2
 cModel Technology
 dC:/intelFPGA_lite/16.1
 vaddCompareStore
-!s110 1523585278
+!s110 1523661366
 !i10b 1
-!s100 bjBd9dBNM;VYfg:Cz]M=c3
-I;ESc37h:kR@`56LV=ARS>1
+!s100 Qb`933T9`?T]BYQH@DU>n3
+IbfVEfY=lQ20YL:G]_C]<>2
 Z0 VDg1SIo80bB@j0V0VzS_@n1
 Z1 dC:/Viterbi_Implementation
-w1523585271
-8C:/Viterbi_Implementation/Lab3/addCompareStore.v
-FC:/Viterbi_Implementation/Lab3/addCompareStore.v
+w1523661304
+8C:\Viterbi_Implementation\Lab3\addCompareStore.v
+FC:\Viterbi_Implementation\Lab3\addCompareStore.v
 L0 1
 Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1523585278.000000
-!s107 C:/Viterbi_Implementation/Lab3/addCompareStore.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Viterbi_Implementation/Lab3/addCompareStore.v|
+!s108 1523661366.000000
+!s107 C:\Viterbi_Implementation\Lab3\addCompareStore.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Viterbi_Implementation\Lab3\addCompareStore.v|
 !i113 1
 Z3 o-work work
 Z4 tCvgOpt 0
@@ -74,14 +74,35 @@ r1
 R3
 R4
 nbit@encoder_@v
-vstage1
-!s110 1523583276
+vmsg_encoder
+!s110 1523666381
 !i10b 1
-!s100 ZP^67WXM50d;WA>EcKgM<0
-Ibnb;eVTC7_j7oJQnFekR70
+!s100 m4?S1fRIl3SJ=ofXERcZ_1
+IcZI=:JH_]lhM<1P3Wb6SA3
 R0
 R1
-w1523583255
+w1523666373
+8C:/Viterbi_Implementation/Lab3/msg_encoder.v
+FC:/Viterbi_Implementation/Lab3/msg_encoder.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1523666381.000000
+!s107 C:/Viterbi_Implementation/Lab3/msg_encoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Viterbi_Implementation/Lab3/msg_encoder.v|
+!i113 1
+R3
+R4
+vstage1
+!s110 1523650435
+!i10b 1
+!s100 @?YZQWP;LFLeQ?@:S8Z][2
+I23F;ZeF^K^6Z42ICA;Iea2
+R0
+R1
+w1523585297
 8C:\Viterbi_Implementation\Lab3\stage1.v
 FC:\Viterbi_Implementation\Lab3\stage1.v
 L0 2
@@ -89,7 +110,7 @@ R2
 r1
 !s85 0
 31
-!s108 1523583276.000000
+!s108 1523650435.000000
 !s107 C:\Viterbi_Implementation\Lab3\stage1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:\Viterbi_Implementation\Lab3\stage1.v|
 !i113 1
@@ -117,23 +138,45 @@ r1
 R3
 R4
 vstage2
-!s110 1523584239
+!s110 1523634369
 !i10b 1
 !s100 j59BC8?<iFIF;OVAlUmRV2
-I[eJlofmgEaN:87N0?<BoX1
+IzmH`X1Of5@`V:Y]jV;4JY2
 R0
 R1
 w1523584218
-8C:\Viterbi_Implementation\Lab3\stage2.v
-FC:\Viterbi_Implementation\Lab3\stage2.v
+8C:/Viterbi_Implementation/Lab3/stage2.v
+FC:/Viterbi_Implementation/Lab3/stage2.v
 L0 1
 R2
 r1
 !s85 0
 31
-!s108 1523584239.000000
-!s107 C:\Viterbi_Implementation\Lab3\stage2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Viterbi_Implementation\Lab3\stage2.v|
+!s108 1523634369.000000
+!s107 C:/Viterbi_Implementation/Lab3/stage2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Viterbi_Implementation/Lab3/stage2.v|
 !i113 1
 R3
 R4
+vTrellis
+!s110 1523654702
+!i10b 1
+!s100 3clel_>5:F;Kc3bTKgack0
+I7R[BMHUEYi7OUi6e_KdWI0
+R0
+R1
+w1523654655
+8C:\Viterbi_Implementation\Trellis.v
+FC:\Viterbi_Implementation\Trellis.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1523654702.000000
+!s107 C:\Viterbi_Implementation\Trellis.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Viterbi_Implementation\Trellis.v|
+!i113 1
+R3
+R4
+n@trellis

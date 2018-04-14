@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C35F672) Path("C:/altera/13.0sp1/Lab3/output_files/") File("Viterbi_decoder.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C35F672) Path("C:/Viterbi_Implementation/Lab3/output_files/") File("Viterbi_decoder.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
