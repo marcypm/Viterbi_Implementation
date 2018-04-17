@@ -3,9 +3,13 @@ msg,
 code_out
 );
 
-input wire [7:0] msg;
+input wire [3:0] msg;
 output wire [7:0] code_out;
 
+
+wire [7:0] encoded_msg;
+
+msg_encoder encode (.msg(msg), .encoded_msg(encoded_msg));
 
 wire [7:0] encoded_msg_1;
 wire [7:0] encoded_msg_2;
@@ -16,14 +20,14 @@ wire [7:0] encoded_msg_6;
 wire [7:0] encoded_msg_7;
 wire [7:0] encoded_msg_8;
 
-bitEncoder bit_1_encoder (.messageBit(msg[0]),.r_out(encoded_msg_1));
-bitEncoder bit_2_encoder (.messageBit(msg[1]),.r_out(encoded_msg_2));
-bitEncoder bit_3_encoder (.messageBit(msg[2]),.r_out(encoded_msg_3));
-bitEncoder bit_4_encoder (.messageBit(msg[3]),.r_out(encoded_msg_4));
-bitEncoder bit_5_encoder (.messageBit(msg[4]),.r_out(encoded_msg_5));
-bitEncoder bit_6_encoder (.messageBit(msg[5]),.r_out(encoded_msg_6));
-bitEncoder bit_7_encoder (.messageBit(msg[6]),.r_out(encoded_msg_7));
-bitEncoder bit_8_encoder (.messageBit(msg[7]),.r_out(encoded_msg_8));
+bitEncoder bit_1_encoder (.messageBit(encoded_msg[0]),.r_out(encoded_msg_1));
+bitEncoder bit_2_encoder (.messageBit(encoded_msg[1]),.r_out(encoded_msg_2));
+bitEncoder bit_3_encoder (.messageBit(encoded_msg[2]),.r_out(encoded_msg_3));
+bitEncoder bit_4_encoder (.messageBit(encoded_msg[3]),.r_out(encoded_msg_4));
+bitEncoder bit_5_encoder (.messageBit(encoded_msg[4]),.r_out(encoded_msg_5));
+bitEncoder bit_6_encoder (.messageBit(encoded_msg[5]),.r_out(encoded_msg_6));
+bitEncoder bit_7_encoder (.messageBit(encoded_msg[6]),.r_out(encoded_msg_7));
+bitEncoder bit_8_encoder (.messageBit(encoded_msg[7]),.r_out(encoded_msg_8));
 
 wire [12:0] S1_W1;
 wire [12:0] S1_W2;

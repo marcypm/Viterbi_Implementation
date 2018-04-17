@@ -1,5 +1,5 @@
 Fitter report for Viterbi_decoder
-Fri Apr 13 21:04:31 2018
+Tue Apr 17 15:52:01 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -59,15 +59,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Apr 13 21:04:31 2018            ;
+; Fitter Status                      ; Successful - Tue Apr 17 15:52:01 2018            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Viterbi_decoder                                  ;
 ; Top-level Entity Name              ; TrellisTopLevel                                  ;
 ; Family                             ; Cyclone II                                       ;
 ; Device                             ; EP2C35F672C6                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 7 / 33,216 ( < 1 % )                             ;
-;     Total combinational functions  ; 7 / 33,216 ( < 1 % )                             ;
+; Total logic elements               ; 5 / 33,216 ( < 1 % )                             ;
+;     Total combinational functions  ; 5 / 33,216 ( < 1 % )                             ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                               ;
 ; Total registers                    ; 0                                                ;
 ; Total pins                         ; 20 / 475 ( 4 % )                                 ;
@@ -137,12 +137,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 2.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ; < 0.1%      ;
+;     Processors 2-4         ;  33.3%      ;
 ;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -153,8 +153,8 @@ applicable agreement for further details.
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 31 ( 0.00 % )      ;
-;     -- Achieved     ; 0 / 31 ( 0.00 % )      ;
+;     -- Requested    ; 0 / 29 ( 0.00 % )      ;
+;     -- Achieved     ; 0 / 29 ( 0.00 % )      ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -177,7 +177,7 @@ applicable agreement for further details.
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 28      ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 26      ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -193,19 +193,19 @@ The pin-out file can be found in C:/Viterbi_Implementation/Lab3/output_files/Vit
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 7 / 33,216 ( < 1 % ) ;
-;     -- Combinational with no register       ; 7                    ;
+; Total logic elements                        ; 5 / 33,216 ( < 1 % ) ;
+;     -- Combinational with no register       ; 5                    ;
 ;     -- Register only                        ; 0                    ;
 ;     -- Combinational with a register        ; 0                    ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
 ;     -- 4 input functions                    ; 0                    ;
-;     -- 3 input functions                    ; 7                    ;
+;     -- 3 input functions                    ; 5                    ;
 ;     -- <=2 input functions                  ; 0                    ;
 ;     -- Register only                        ; 0                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 7                    ;
+;     -- normal mode                          ; 5                    ;
 ;     -- arithmetic mode                      ; 0                    ;
 ;                                             ;                      ;
 ; Total registers*                            ; 0 / 34,593 ( 0 % )   ;
@@ -229,10 +229,10 @@ The pin-out file can be found in C:/Viterbi_Implementation/Lab3/output_files/Vit
 ; CRC blocks                                  ; 0 / 1 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%         ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%         ;
-; Maximum fan-out                             ; 8                    ;
-; Highest non-global fan-out                  ; 8                    ;
-; Total fan-out                               ; 37                   ;
-; Average fan-out                             ; 1.23                 ;
+; Maximum fan-out                             ; 5                    ;
+; Highest non-global fan-out                  ; 5                    ;
+; Total fan-out                               ; 24                   ;
+; Average fan-out                             ; 0.86                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -245,19 +245,19 @@ The pin-out file can be found in C:/Viterbi_Implementation/Lab3/output_files/Vit
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 7 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
-;     -- Combinational with no register       ; 7                   ; 0                              ;
+; Total logic elements                        ; 5 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
+;     -- Combinational with no register       ; 5                   ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
 ;     -- Combinational with a register        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
 ;     -- 4 input functions                    ; 0                   ; 0                              ;
-;     -- 3 input functions                    ; 7                   ; 0                              ;
+;     -- 3 input functions                    ; 5                   ; 0                              ;
 ;     -- <=2 input functions                  ; 0                   ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
-;     -- normal mode                          ; 7                   ; 0                              ;
+;     -- normal mode                          ; 5                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Total registers                             ; 0                   ; 0                              ;
@@ -278,7 +278,7 @@ The pin-out file can be found in C:/Viterbi_Implementation/Lab3/output_files/Vit
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 37                  ; 0                              ;
+;     -- Total Connections                    ; 24                  ; 0                              ;
 ;     -- Registered Connections               ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
@@ -311,10 +311,10 @@ The pin-out file can be found in C:/Viterbi_Implementation/Lab3/output_files/Vit
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; msg[0] ; U3    ; 1        ; 0            ; 12           ; 0           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; msg[1] ; U4    ; 1        ; 0            ; 12           ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; msg[2] ; V1    ; 1        ; 0            ; 12           ; 2           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; msg[3] ; V2    ; 1        ; 0            ; 12           ; 3           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; msg[0] ; U3    ; 1        ; 0            ; 12           ; 0           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; msg[1] ; U4    ; 1        ; 0            ; 12           ; 1           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; msg[2] ; V1    ; 1        ; 0            ; 12           ; 2           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; msg[3] ; V2    ; 1        ; 0            ; 12           ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -1081,9 +1081,9 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                    ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------+--------------+
-; |TrellisTopLevel           ; 7 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 20   ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; |TrellisTopLevel                       ; work         ;
+; |TrellisTopLevel           ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 20   ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; |TrellisTopLevel                       ; work         ;
 ;    |addCompareStore:inst1| ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |TrellisTopLevel|addCompareStore:inst1 ; work         ;
-;    |msg_encoder:inst2|     ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |TrellisTopLevel|msg_encoder:inst2     ; work         ;
+;    |msg_encoder:inst2|     ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |TrellisTopLevel|msg_encoder:inst2     ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1116,64 +1116,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------------+---------------+-----------------------+-----+
 
 
-+--------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                           ;
-+--------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                        ; Pad To Core Index ; Setting ;
-+--------------------------------------------+-------------------+---------+
-; msg[2]                                     ;                   ;         ;
-;      - addCompareStore:inst1|code_out[7]~0 ; 1                 ; 6       ;
-;      - addCompareStore:inst1|code_out[5]~2 ; 1                 ; 6       ;
-;      - addCompareStore:inst1|code_out[4]~3 ; 1                 ; 6       ;
-;      - msg_encoder:inst2|Add2~0            ; 1                 ; 6       ;
-;      - msg_encoder:inst2|Add6~0            ; 1                 ; 6       ;
-;      - msg_e[6]                            ; 1                 ; 6       ;
-;      - m_hat[1]                            ; 1                 ; 6       ;
-; msg[1]                                     ;                   ;         ;
-;      - addCompareStore:inst1|code_out[7]~0 ; 0                 ; 6       ;
-;      - addCompareStore:inst1|code_out[6]~1 ; 0                 ; 6       ;
-;      - addCompareStore:inst1|code_out[4]~3 ; 0                 ; 6       ;
-;      - msg_encoder:inst2|Add4~0            ; 0                 ; 6       ;
-;      - msg_encoder:inst2|Add6~0            ; 0                 ; 6       ;
-;      - msg_e[5]                            ; 0                 ; 6       ;
-;      - m_hat[2]                            ; 0                 ; 6       ;
-; msg[0]                                     ;                   ;         ;
-;      - addCompareStore:inst1|code_out[7]~0 ; 0                 ; 6       ;
-;      - addCompareStore:inst1|code_out[6]~1 ; 0                 ; 6       ;
-;      - addCompareStore:inst1|code_out[5]~2 ; 0                 ; 6       ;
-;      - msg_encoder:inst2|Add2~0            ; 0                 ; 6       ;
-;      - msg_encoder:inst2|Add4~0            ; 0                 ; 6       ;
-;      - msg_encoder:inst2|Add6~0            ; 0                 ; 6       ;
-;      - msg_e[4]                            ; 0                 ; 6       ;
-;      - m_hat[3]                            ; 0                 ; 6       ;
-; msg[3]                                     ;                   ;         ;
-;      - addCompareStore:inst1|code_out[6]~1 ; 1                 ; 6       ;
-;      - addCompareStore:inst1|code_out[5]~2 ; 1                 ; 6       ;
-;      - addCompareStore:inst1|code_out[4]~3 ; 1                 ; 6       ;
-;      - msg_encoder:inst2|Add2~0            ; 1                 ; 6       ;
-;      - msg_encoder:inst2|Add4~0            ; 1                 ; 6       ;
-;      - msg_e[7]                            ; 1                 ; 6       ;
-;      - m_hat[0]                            ; 1                 ; 6       ;
-+--------------------------------------------+-------------------+---------+
++-------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                ;
++-------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                             ; Pad To Core Index ; Setting ;
++-------------------------------------------------+-------------------+---------+
+; msg[2]                                          ;                   ;         ;
+;      - addCompareStore:inst1|code_out_temp[7]~0 ; 1                 ; 6       ;
+;      - addCompareStore:inst1|code_out_temp[5]~2 ; 1                 ; 6       ;
+;      - addCompareStore:inst1|code_out_temp[3]~3 ; 1                 ; 6       ;
+;      - msg_encoder:inst2|Add6~0                 ; 1                 ; 6       ;
+;      - m_hat[1]                                 ; 1                 ; 6       ;
+; msg[1]                                          ;                   ;         ;
+;      - addCompareStore:inst1|code_out_temp[7]~0 ; 1                 ; 6       ;
+;      - addCompareStore:inst1|code_out_temp[6]~1 ; 1                 ; 6       ;
+;      - addCompareStore:inst1|code_out_temp[3]~3 ; 1                 ; 6       ;
+;      - msg_encoder:inst2|Add6~0                 ; 1                 ; 6       ;
+;      - m_hat[2]                                 ; 1                 ; 6       ;
+; msg[0]                                          ;                   ;         ;
+;      - addCompareStore:inst1|code_out_temp[7]~0 ; 0                 ; 6       ;
+;      - addCompareStore:inst1|code_out_temp[6]~1 ; 0                 ; 6       ;
+;      - addCompareStore:inst1|code_out_temp[5]~2 ; 0                 ; 6       ;
+;      - msg_encoder:inst2|Add6~0                 ; 0                 ; 6       ;
+;      - m_hat[3]                                 ; 0                 ; 6       ;
+; msg[3]                                          ;                   ;         ;
+;      - addCompareStore:inst1|code_out_temp[6]~1 ; 1                 ; 6       ;
+;      - addCompareStore:inst1|code_out_temp[5]~2 ; 1                 ; 6       ;
+;      - addCompareStore:inst1|code_out_temp[3]~3 ; 1                 ; 6       ;
+;      - m_hat[0]                                 ; 1                 ; 6       ;
++-------------------------------------------------+-------------------+---------+
 
 
-+-----------------------------------------------+
-; Non-Global High Fan-Out Signals               ;
-+-------------------------------------+---------+
-; Name                                ; Fan-Out ;
-+-------------------------------------+---------+
-; msg[0]                              ; 8       ;
-; msg[3]                              ; 7       ;
-; msg[1]                              ; 7       ;
-; msg[2]                              ; 7       ;
-; addCompareStore:inst1|code_out[4]~3 ; 2       ;
-; msg_encoder:inst2|Add6~0            ; 1       ;
-; msg_encoder:inst2|Add4~0            ; 1       ;
-; msg_encoder:inst2|Add2~0            ; 1       ;
-; addCompareStore:inst1|code_out[5]~2 ; 1       ;
-; addCompareStore:inst1|code_out[6]~1 ; 1       ;
-; addCompareStore:inst1|code_out[7]~0 ; 1       ;
-+-------------------------------------+---------+
++----------------------------------------------------+
+; Non-Global High Fan-Out Signals                    ;
++------------------------------------------+---------+
+; Name                                     ; Fan-Out ;
++------------------------------------------+---------+
+; msg[0]                                   ; 5       ;
+; msg[1]                                   ; 5       ;
+; msg[2]                                   ; 5       ;
+; msg[3]                                   ; 4       ;
+; msg_encoder:inst2|Add6~0                 ; 1       ;
+; addCompareStore:inst1|code_out_temp[3]~3 ; 1       ;
+; addCompareStore:inst1|code_out_temp[5]~2 ; 1       ;
+; addCompareStore:inst1|code_out_temp[6]~1 ; 1       ;
+; addCompareStore:inst1|code_out_temp[7]~0 ; 1       ;
++------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -1181,28 +1169,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Other Routing Resource Type ; Usage                 ;
 +-----------------------------+-----------------------+
-; Block interconnects         ; 20 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 6 / 3,315 ( < 1 % )   ;
-; C4 interconnects            ; 16 / 60,840 ( < 1 % ) ;
+; Block interconnects         ; 13 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 3 / 3,315 ( < 1 % )   ;
+; C4 interconnects            ; 13 / 60,840 ( < 1 % ) ;
 ; Global clocks               ; 0 / 16 ( 0 % )        ;
 ; Local interconnects         ; 0 / 33,216 ( 0 % )    ;
-; R24 interconnects           ; 12 / 3,091 ( < 1 % )  ;
-; R4 interconnects            ; 31 / 81,294 ( < 1 % ) ;
+; R24 interconnects           ; 9 / 3,091 ( < 1 % )   ;
+; R4 interconnects            ; 9 / 81,294 ( < 1 % )  ;
 +-----------------------------+-----------------------+
 
 
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 7.00) ; Number of LABs  (Total = 1) ;
+; Number of Logic Elements  (Average = 5.00) ; Number of LABs  (Total = 1) ;
 +--------------------------------------------+-----------------------------+
 ; 1                                          ; 0                           ;
 ; 2                                          ; 0                           ;
 ; 3                                          ; 0                           ;
 ; 4                                          ; 0                           ;
-; 5                                          ; 0                           ;
+; 5                                          ; 1                           ;
 ; 6                                          ; 0                           ;
-; 7                                          ; 1                           ;
+; 7                                          ; 0                           ;
 ; 8                                          ; 0                           ;
 ; 9                                          ; 0                           ;
 ; 10                                         ; 0                           ;
@@ -1218,32 +1206,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 7.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced  (Average = 5.00) ; Number of LABs  (Total = 1) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 1                           ;
+; 5                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 7.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced Out  (Average = 5.00) ; Number of LABs  (Total = 1) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
-; 5                                               ; 0                           ;
-; 6                                               ; 0                           ;
-; 7                                               ; 1                           ;
+; 5                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
@@ -1351,9 +1335,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 1228 megabytes
-    Info: Processing ended: Fri Apr 13 21:04:31 2018
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 1234 megabytes
+    Info: Processing ended: Tue Apr 17 15:52:01 2018
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:05
 
 

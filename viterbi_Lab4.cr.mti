@@ -1,16 +1,23 @@
-C:/Viterbi_Implementation/Trellis.v {1 {vlog -work work -stats=none {C:\Viterbi_Implementation\Trellis.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Trellis
-
-Top level modules:
-	Trellis
-
-} {} {}} C:/Viterbi_Implementation/Lab3/stage2.v {1 {vlog -work work -stats=none C:/Viterbi_Implementation/Lab3/stage2.v
+C:/Viterbi_Implementation/Lab3/stage2.v {1 {vlog -work work -stats=none C:/Viterbi_Implementation/Lab3/stage2.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module stage2
 
 Top level modules:
 	stage2
+
+} {} {}} C:/Viterbi_Implementation/Lab3/msg_encoder.v {1 {vlog -work work -stats=none C:/Viterbi_Implementation/Lab3/msg_encoder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module msg_encoder
+
+Top level modules:
+	msg_encoder
+
+} {} {}} C:/Viterbi_Implementation/Trellis.v {1 {vlog -work work -stats=none C:/Viterbi_Implementation/Trellis.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Trellis
+
+Top level modules:
+	Trellis
 
 } {} {}} C:/Viterbi_Implementation/Lab3/bitEncoder.v {1 {vlog -work work -stats=none C:/Viterbi_Implementation/Lab3/bitEncoder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -25,5 +32,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	stage1_2
+
+} {} {}} C:/Viterbi_Implementation/Lab3/stage1.v {1 {vlog -work work -stats=none C:/Viterbi_Implementation/Lab3/stage1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module stage1
+
+Top level modules:
+	stage1
+
+} {} {}} C:/Viterbi_Implementation/Lab3/addCompareStore.v {1 {vlog -work work -stats=none C:/Viterbi_Implementation/Lab3/addCompareStore.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module addCompareStore
+
+Top level modules:
+	addCompareStore
 
 } {} {}}

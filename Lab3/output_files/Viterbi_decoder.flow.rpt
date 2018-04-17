@@ -1,5 +1,5 @@
 Flow report for Viterbi_decoder
-Fri Apr 13 21:04:37 2018
+Tue Apr 17 15:52:07 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Fri Apr 13 21:04:35 2018            ;
+; Flow Status                        ; Successful - Tue Apr 17 15:52:05 2018            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Viterbi_decoder                                  ;
 ; Top-level Entity Name              ; TrellisTopLevel                                  ;
 ; Family                             ; Cyclone II                                       ;
 ; Device                             ; EP2C35F672C6                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 7 / 33,216 ( < 1 % )                             ;
-;     Total combinational functions  ; 7 / 33,216 ( < 1 % )                             ;
+; Total logic elements               ; 5 / 33,216 ( < 1 % )                             ;
+;     Total combinational functions  ; 5 / 33,216 ( < 1 % )                             ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                               ;
 ; Total registers                    ; 0                                                ;
 ; Total pins                         ; 20 / 475 ( 4 % )                                 ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/13/2018 21:04:24 ;
+; Start date & time ; 04/17/2018 15:51:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Viterbi_decoder     ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+-----------------+-----------------+------------+
 ; Assignment Name                     ; Value                           ; Default Value   ; Entity Name     ; Section Id ;
 +-------------------------------------+---------------------------------+-----------------+-----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 273440550206548.152366786403572 ; --              ; --              ; --         ;
+; COMPILER_SIGNATURE_ID               ; 273440550206548.152399471310880 ; --              ; --              ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --              ; --              ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --              ; --              ; --         ;
 ; PARTITION_COLOR                     ; 16764057                        ; --              ; TrellisTopLevel ; Top        ;
@@ -91,11 +91,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 489 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 1228 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 458 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 460 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:09                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 491 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:06     ; 2.0                     ; 1234 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 461 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:10                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

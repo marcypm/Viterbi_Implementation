@@ -343,7 +343,7 @@ end
 	end
 	
 	
-	code_out = {code_out_temp[7:5],code_out_temp[3],code_out_temp[4],code_out_temp[2:0]};
+	code_out = ~{code_out_temp[7:5],code_out_temp[3],code_out_temp[4],code_out_temp[2:0]};
 
 end
 	

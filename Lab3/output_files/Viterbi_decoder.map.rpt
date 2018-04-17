@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Viterbi_decoder
-Fri Apr 13 21:04:25 2018
+Tue Apr 17 15:51:54 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -14,19 +14,21 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst7
- 12. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst6
- 13. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst5
- 14. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst4
- 15. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst3
- 16. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst2
- 17. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst1
- 18. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
- 21. Analysis & Synthesis Suppressed Messages
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst7
+ 14. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst6
+ 15. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst5
+ 16. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst4
+ 17. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst3
+ 18. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst2
+ 19. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst1
+ 20. Parameter Settings for User Entity Instance: PreTrellisNosieGen:inst|uniformRV32:inst
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+ 23. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -52,13 +54,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 13 21:04:25 2018            ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 17 15:51:54 2018            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Viterbi_decoder                                  ;
 ; Top-level Entity Name              ; TrellisTopLevel                                  ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 7                                                ;
-;     Total combinational functions  ; 7                                                ;
+; Total logic elements               ; 5                                                ;
+;     Total combinational functions  ; 5                                                ;
 ;     Dedicated logic registers      ; 0                                                ;
 ; Total registers                    ; 0                                                ;
 ; Total pins                         ; 20                                               ;
@@ -192,16 +194,16 @@ applicable agreement for further details.
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Estimated Total logic elements              ; 7      ;
+; Estimated Total logic elements              ; 5      ;
 ;                                             ;        ;
-; Total combinational functions               ; 7      ;
+; Total combinational functions               ; 5      ;
 ; Logic element usage by number of LUT inputs ;        ;
 ;     -- 4 input functions                    ; 0      ;
-;     -- 3 input functions                    ; 7      ;
+;     -- 3 input functions                    ; 5      ;
 ;     -- <=2 input functions                  ; 0      ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 7      ;
+;     -- normal mode                          ; 5      ;
 ;     -- arithmetic mode                      ; 0      ;
 ;                                             ;        ;
 ; Total registers                             ; 0      ;
@@ -210,10 +212,10 @@ applicable agreement for further details.
 ;                                             ;        ;
 ; I/O pins                                    ; 20     ;
 ; Embedded Multiplier 9-bit elements          ; 0      ;
-; Maximum fan-out node                        ; msg[0] ;
-; Maximum fan-out                             ; 8      ;
-; Total fan-out                               ; 37     ;
-; Average fan-out                             ; 1.37   ;
+; Maximum fan-out node                        ; msg[2] ;
+; Maximum fan-out                             ; 5      ;
+; Total fan-out                               ; 24     ;
+; Average fan-out                             ; 0.96   ;
 +---------------------------------------------+--------+
 
 
@@ -222,9 +224,9 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
-; |TrellisTopLevel           ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |TrellisTopLevel                       ; work         ;
+; |TrellisTopLevel           ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |TrellisTopLevel                       ; work         ;
 ;    |addCompareStore:inst1| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrellisTopLevel|addCompareStore:inst1 ; work         ;
-;    |msg_encoder:inst2|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrellisTopLevel|msg_encoder:inst2     ; work         ;
+;    |msg_encoder:inst2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrellisTopLevel|msg_encoder:inst2     ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -251,6 +253,282 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
++-----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                            ;
++--------------------------------------------------------+--------------------------------------+
+; Register name                                          ; Reason for Removal                   ;
++--------------------------------------------------------+--------------------------------------+
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[16]         ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[2..15]      ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[28..31]     ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[22..27]     ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[21]         ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[17..20]     ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[0,1]        ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[27]        ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[22..26]    ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[21,28..31] ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[2..20]     ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[0,1]       ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[28..31]    ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[22..27]    ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[21]        ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[2..20]     ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[0,1]       ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[28..31]    ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[22..27]    ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[21]        ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[2..20]     ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[0,1]       ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[28..31]    ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[22..27]    ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[21]        ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[2..20]     ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[0,1]       ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[28..31]    ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[22..27]    ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[21]        ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[2..20]     ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[0,1]       ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[28..31]    ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[22..27]    ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[21]        ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[2..20]     ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[0,1]       ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[28..31]    ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[22..27]    ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[21]        ; Stuck at GND due to stuck port clock ;
+; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[2..20]     ; Lost fanout                          ;
+; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[0,1]       ; Stuck at GND due to stuck port clock ;
+; Total Number of Removed Registers = 256                ;                                      ;
++--------------------------------------------------------+--------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                  ;
++-------------------------------------------------+-------------------------+--------------------------------------------------+
+; Register name                                   ; Reason for Removal      ; Registers Removed due to This Register           ;
++-------------------------------------------------+-------------------------+--------------------------------------------------+
+; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[21] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[20], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[19], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[18], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[17], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[16], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[15], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[14], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[13], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[12], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[11], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[10], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[9],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[8],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[7],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[6],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[5],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[4],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[3],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[2]   ;
+; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[21] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[20], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[19], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[18], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[17], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[16], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[15], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[14], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[13], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[12], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[11], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[10], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[9],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[8],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[7],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[6],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[5],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[4],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[3],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[2]   ;
+; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[21] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[20], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[19], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[18], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[17], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[16], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[15], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[14], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[13], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[12], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[11], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[10], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[9],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[8],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[7],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[6],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[5],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[4],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[3],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[2]   ;
+; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[21] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[20], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[19], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[18], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[17], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[16], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[15], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[14], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[13], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[12], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[11], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[10], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[9],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[8],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[7],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[6],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[5],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[4],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[3],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[2]   ;
+; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[21] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[20], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[19], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[18], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[17], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[16], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[15], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[14], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[13], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[12], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[11], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[10], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[9],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[8],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[7],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[6],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[5],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[4],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[3],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[2]   ;
+; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[21] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[20], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[19], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[18], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[17], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[16], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[15], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[14], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[13], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[12], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[11], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[10], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[9],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[8],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[7],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[6],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[5],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[4],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[3],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[2]   ;
+; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[21] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[20], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[19], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[18], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[17], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[16], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[15], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[14], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[13], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[12], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[11], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[10], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[9],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[8],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[7],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[6],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[5],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[4],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[3],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[2]   ;
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[16]  ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[15],  ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[14],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[13],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[12],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[11],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[10],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[9],   ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[8],   ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[7],   ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[6],   ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[5],   ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[4],   ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[3],   ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[2]    ;
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[28]  ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[27],  ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[26],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[25],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[24],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[23],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[22]   ;
+; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[27] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[26], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[25], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[24], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[23], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[22], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[28]  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[28] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[27], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[26], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[25], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[24], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[23], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[22]  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[28] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[27], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[26], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[25], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[24], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[23], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[22]  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[28] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[27], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[26], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[25], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[24], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[23], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[22]  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[28] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[27], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[26], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[25], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[24], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[23], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[22]  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[28] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[27], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[26], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[25], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[24], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[23], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[22]  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[28] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[27], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[26], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[25], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[24], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[23], ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[22]  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[21]  ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[20],  ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[19],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[18],  ;
+;                                                 ;                         ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[17]   ;
+; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[30] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[31], ;
+;                                                 ; due to stuck port clock ; PreTrellisNosieGen:inst|uniformRV32:inst3|Y[0]   ;
+; PreTrellisNosieGen:inst|uniformRV32:inst|Y[31]  ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst|Y[0]    ;
+;                                                 ; due to stuck port clock ;                                                  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[31] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst1|Y[0]   ;
+;                                                 ; due to stuck port clock ;                                                  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[31] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst2|Y[0]   ;
+;                                                 ; due to stuck port clock ;                                                  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[31] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst4|Y[0]   ;
+;                                                 ; due to stuck port clock ;                                                  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[31] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst5|Y[0]   ;
+;                                                 ; due to stuck port clock ;                                                  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[29] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[30]  ;
+;                                                 ; due to stuck port clock ;                                                  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[31] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst6|Y[0]   ;
+;                                                 ; due to stuck port clock ;                                                  ;
+; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[31] ; Stuck at GND            ; PreTrellisNosieGen:inst|uniformRV32:inst7|Y[0]   ;
+;                                                 ; due to stuck port clock ;                                                  ;
++-------------------------------------------------+-------------------------+--------------------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
@@ -266,19 +544,19 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|addCompareStore:inst1|code_out[1] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|stage1:stage1|d3_out[6]           ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|stage1:stage4|d1_out[6]           ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|addCompareStore:inst1|code_out[2] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|stage2:stage2|d5_out[6]           ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|stage2:stage3|d2_out[6]           ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |TrellisTopLevel|addCompareStore:inst1|code_out[3] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|addCompareStore:inst1|code_out_temp[1] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|stage1:stage1|d3_out[6]                ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|stage1:stage4|d1_out[6]                ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|addCompareStore:inst1|code_out_temp[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|stage2:stage2|d5_out[6]                ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TrellisTopLevel|stage2:stage3|d2_out[6]                ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |TrellisTopLevel|addCompareStore:inst1|code_out_temp[4] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------+
@@ -376,7 +654,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Apr 13 21:04:22 2018
+    Info: Processing started: Tue Apr 17 15:51:51 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Viterbi_decoder -c Viterbi_decoder
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file msg_encoder.v
@@ -458,14 +736,6 @@ Info (10041): Inferred latch for "d1_out[10]" at stage1.v(27)
 Info (10041): Inferred latch for "d1_out[11]" at stage1.v(27)
 Info (10041): Inferred latch for "d1_out[12]" at stage1.v(27)
 Info (12128): Elaborating entity "PreTrellisNosieGen" for hierarchy "PreTrellisNosieGen:inst"
-Warning (275013): Port "CLK" of type uniformRV32 and instance "inst7" is missing source signal
-Warning (275013): Port "CLK" of type uniformRV32 and instance "inst6" is missing source signal
-Warning (275013): Port "CLK" of type uniformRV32 and instance "inst5" is missing source signal
-Warning (275013): Port "CLK" of type uniformRV32 and instance "inst4" is missing source signal
-Warning (275013): Port "CLK" of type uniformRV32 and instance "inst3" is missing source signal
-Warning (275013): Port "CLK" of type uniformRV32 and instance "inst2" is missing source signal
-Warning (275013): Port "CLK" of type uniformRV32 and instance "inst1" is missing source signal
-Warning (275013): Port "CLK" of type uniformRV32 and instance "inst" is missing source signal
 Info (12128): Elaborating entity "bitEncoder" for hierarchy "PreTrellisNosieGen:inst|bitEncoder:inst17"
 Warning (10230): Verilog HDL assignment warning at bitEncoder.v(21): truncated value with size 32 to match size of target (8)
 Warning (10230): Verilog HDL assignment warning at bitEncoder.v(22): truncated value with size 32 to match size of target (8)
@@ -632,16 +902,25 @@ Warning (14026): LATCH primitive "stage1:stage1|d4_out[12]" is permanently enabl
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
     Info (13026): Duplicate LATCH primitive "stage2:stage2|d1_out[12]" merged with LATCH primitive "stage2:stage2|d4_out[12]"
     Info (13026): Duplicate LATCH primitive "stage2:stage3|d4_out[12]" merged with LATCH primitive "stage2:stage3|d1_out[12]"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "msg_e[6]" is stuck at GND
+    Warning (13410): Pin "msg_e[5]" is stuck at GND
+    Warning (13410): Pin "msg_e[4]" is stuck at VCC
+    Warning (13410): Pin "msg_e[3]" is stuck at GND
+    Warning (13410): Pin "msg_e[2]" is stuck at GND
+    Warning (13410): Pin "msg_e[1]" is stuck at GND
+    Warning (13410): Pin "msg_e[0]" is stuck at GND
+Info (17049): 198 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Viterbi_Implementation/Lab3/output_files/Viterbi_decoder.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 27 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 7 logic cells
+    Info (21061): Implemented 5 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 61 warnings
-    Info: Peak virtual memory: 499 megabytes
-    Info: Processing ended: Fri Apr 13 21:04:25 2018
+    Info: Peak virtual memory: 502 megabytes
+    Info: Processing ended: Tue Apr 17 15:51:54 2018
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

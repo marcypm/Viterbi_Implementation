@@ -24,8 +24,8 @@ begin
 
 	noiseTemp[7:0] = noise[31:24];
 	//Shift noiseTemp Here
-	//noiseTemp = {6'b000000,noiseTemp[7:6]}; //shift by 6 >>
- 	noiseTemp = 8'b00000000;
+	noiseTemp = {4'b0000,noiseTemp[7:4]}; //shift by 6 >>
+ 	//noiseTemp = 8'b00000000;
 	r_out <= dataStruct + noiseTemp;
 
 end

@@ -66,7 +66,6 @@ set_global_assignment -name VERILOG_FILE msg_encoder.v
 set_global_assignment -name VERILOG_FILE bitEncoder.v
 set_global_assignment -name VERILOG_FILE uniformRV32.v
 set_global_assignment -name BDF_FILE TrellisTopLevel.bdf
-set_global_assignment -name VERILOG_FILE stage4.v
 set_global_assignment -name VERILOG_FILE stage2.v
 set_global_assignment -name VERILOG_FILE stage1.v
 set_global_assignment -name BDF_FILE PreTrellisNosieGen.bdf
