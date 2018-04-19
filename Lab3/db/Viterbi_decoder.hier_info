@@ -11,14 +11,17 @@ msg[0] => msg_encoder:inst2.msg[0]
 msg[1] => msg_encoder:inst2.msg[1]
 msg[2] => msg_encoder:inst2.msg[2]
 msg[3] => msg_encoder:inst2.msg[3]
-msg_e[0] <= PreTrellisNosieGen:inst.R1[0]
-msg_e[1] <= PreTrellisNosieGen:inst.R1[1]
-msg_e[2] <= PreTrellisNosieGen:inst.R1[2]
-msg_e[3] <= PreTrellisNosieGen:inst.R1[3]
-msg_e[4] <= PreTrellisNosieGen:inst.R1[4]
-msg_e[5] <= PreTrellisNosieGen:inst.R1[5]
-msg_e[6] <= PreTrellisNosieGen:inst.R1[6]
-msg_e[7] <= PreTrellisNosieGen:inst.R1[7]
+SNR[0] => PreTrellisNosieGen:inst.SNR[0]
+SNR[1] => PreTrellisNosieGen:inst.SNR[1]
+SNR[2] => PreTrellisNosieGen:inst.SNR[2]
+msg_e[0] <= msg_encoder:inst2.encoded_msg[0]
+msg_e[1] <= msg_encoder:inst2.encoded_msg[1]
+msg_e[2] <= msg_encoder:inst2.encoded_msg[2]
+msg_e[3] <= msg_encoder:inst2.encoded_msg[3]
+msg_e[4] <= msg_encoder:inst2.encoded_msg[4]
+msg_e[5] <= msg_encoder:inst2.encoded_msg[5]
+msg_e[6] <= msg_encoder:inst2.encoded_msg[6]
+msg_e[7] <= msg_encoder:inst2.encoded_msg[7]
 
 
 |TrellisTopLevel|addCompareStore:inst1
@@ -1574,6 +1577,9 @@ R8[4] <= bitEncoder:inst10.r_out[4]
 R8[5] <= bitEncoder:inst10.r_out[5]
 R8[6] <= bitEncoder:inst10.r_out[6]
 R8[7] <= bitEncoder:inst10.r_out[7]
+SNR[0] => ~NO_FANOUT~
+SNR[1] => ~NO_FANOUT~
+SNR[2] => ~NO_FANOUT~
 
 
 |TrellisTopLevel|PreTrellisNosieGen:inst|bitEncoder:inst17
